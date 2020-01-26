@@ -11,13 +11,6 @@ body, html{
     background-color: #dddddd
 }
 
-.main{
-    position: absolute;
-    top: 390px;
-    width: 100%;
-    z-index: -1;
-}
-
 /* ЦВЕТА ТЕКСТА */
 
 .calm{
@@ -161,8 +154,6 @@ nav{
     align-items: center;
     justify-content: space-around;
 }
-
-
 
 .audio-pic{
     width: 50%;
