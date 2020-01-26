@@ -8,13 +8,11 @@
 
 body, html{
     overflow-x: hidden;
-    background-color: #dddddd;
+    background-color: #dddddd
 }
 
 .main{
-    position: absolute;
-    top: 390px;
-    z-index: -1;
+    
 }
 
 /* ЦВЕТА ТЕКСТА */
@@ -129,10 +127,10 @@ nav{
     grid-template-columns: repeat(2, 1fr);
     flex-direction: column;
     align-items: center;
+    width: 100%;
 }
 
 .music-name{
-    width: 90%;
     margin: 10px;
     margin-bottom: 0;
     padding:10px 25px 10px 25px;
@@ -154,7 +152,7 @@ nav{
 }
 
 .audio-info{
-    width: 100%;
+    width: 90%;
     text-align: center;
     display: flex;
     align-items: center;
