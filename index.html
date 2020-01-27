@@ -7,6 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
 </head>
 <body>
     <div class="top">
@@ -15,8 +16,8 @@
             <input type="checkbox" id="checkbox-nav">
             <label for="checkbox-nav">
                 <ul class="menu touch">
-                    <li id="mlink"><a class="logo bright">forever alove</a></li>
-                    <li id="mlink"><a class="link calm">music</a></li>
+                    <li><a class="logo bright">forever alove</a></li>
+                    <li id="mlink"><a class="link calm" id="#music">music</a></li>
                     <li id="mlink"><a class="link calm">video</a></li>
                     <li id="mlink"><a class="link calm">dev</a></li>
                     <li id="mlink"><a class="link calm">about</a></li>
@@ -33,12 +34,12 @@
         <article class="descript calm">я сочиняю на фортепиано, делаю ремиксы, а иногда и свои треки. еще я программирую всякую хрень, фотографирую, и все это будет здесь</article>
     </section>
     <section class="intro-links">
-        <div class="intro-link"><a class="calm" href="https://vk.com/forever_alove">VK</a></div>
-        <div class="intro-link"><a class="calm" href="https://www.instagram.com/the21composer">Inst</a></div>
-        <div class="intro-link"><a class="calm" href="https://www.youtube.com/channel/UC331TmQoaB0-EocWLoAtzwQ/">YouTube</a></div>
+        <div class="intro-link"><a class="calm" target="_blank" href="https://vk.com/forever_alove">VK</a></div>
+        <div class="intro-link"><a class="calm" target="_blank" href="https://www.instagram.com/the21composer">Inst</a></div>
+        <div class="intro-link"><a class="calm" target="_blank" href="https://www.youtube.com/channel/UC331TmQoaB0-EocWLoAtzwQ/">YouTube</a></div>
     </section>
     </div>
-    <div class="music-name">
+    <div class="music-name" id="music">
         music
     </div>
     <section class="music">
@@ -46,8 +47,9 @@
             <div class="audio-info">
                 <div class="audio-text">
                     <h2>2711</h2> <br>
-                    type: <b>piano composition</b> <br>
-                    release: <b>2019</b> <br>
+                    piano <br> 
+                    expromt <br>
+                    9.12.2019
                 </div>
                 <img class="audio-pic" src="2711.jpg">
             </div>
@@ -56,49 +58,29 @@
         <article class="audio-post">
             <div class="audio-info">
                 <div class="audio-text">
-                    <h2>2711</h2> <br>
-                    type: <b>piano composition</b> <br>
-                    release: <b>2019</b> <br>
+                    <h2>qualm</h2> <br>
+                    piano <br> 
+                    composition <br>
+                    4.12.2019
                 </div>
-                <img class="audio-pic" src="2711.jpg">
+                <img class="audio-pic" src="qualm.jpg">
             </div>
             <audio class="audio" src="2711.mp3" preload="metadata" controls></audio>
         </article>
         <article class="audio-post">
             <div class="audio-info">
                 <div class="audio-text">
-                    <h2>2711</h2> <br>
-                    type: <b>piano composition</b> <br>
-                    release: <b>2019</b> <br>
+                    <small>джизус</small>
+                    <h2>девочка в классе</h2> <br>
+                    piano <br> 
+                    cover <br>
+                    18.11.2019
                 </div>
-                <img class="audio-pic" src="2711.jpg">
+                <img class="audio-pic" src="girl.jpg">
             </div>
-            <audio class="audio" src="2711.mp3" preload="metadata" controls></audio>
-        </article>
-        <article class="audio-post">
-            <div class="audio-info">
-                <div class="audio-text">
-                    <h2>2711</h2> <br>
-                    type: <b>piano composition</b> <br>
-                    release: <b>2019</b> <br>
-                </div>
-                <img class="audio-pic" src="2711.jpg">
-            </div>
-            <audio class="audio" src="2711.mp3" preload="metadata" controls></audio>
-        </article>
-        <article class="audio-post">
-            <div class="audio-info">
-                <div class="audio-text">
-                    <h2>2711</h2> <br>
-                    type: <b>piano composition</b> <br>
-                    release: <b>2019</b> <br>
-                </div>
-                <img class="audio-pic" src="2711.jpg">
-            </div>
-            <audio class="audio" src="2711.mp3" preload="metadata" controls></audio>
+            <audio class="audio" src="girl.mp3" preload="metadata" controls></audio>
         </article>
     </section>
-    
     <script src="script.js">
     </script>
 </body>
