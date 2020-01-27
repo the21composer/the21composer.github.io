@@ -8,6 +8,7 @@ $(document).ready(function(){
 
     jQuery(".download-btn,.soc-btn").click(function () {
         elementClick = jQuery(this).attr("id");
-        window.open(elementClick, '_blank');
+        //window.open(elementClick, '_blank');
+        location.href(elementClick);
     })
 });
