@@ -10,4 +10,15 @@ $(document).ready(function(){
         elementClick = jQuery(this).attr("id");
         location.href = elementClick;
     });
+
+    jQuery("#cover-type").prop('checked', true);
+    
+    jQuery("#cover-type").on("change", function(){
+        if(jQuery("#cover-type").prop("checked")){
+            jQuery(".cover").show(); 
+        }
+        else{
+            jQuery(".cover").hide();
+        };
+    });
 });
