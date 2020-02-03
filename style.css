@@ -121,25 +121,17 @@ nav{
     transition: all .3s ease-out;
 }
 
-#mlink:active, .intro-link:active, .download-btn:active{
+#mlink:active{
+    transform: scale(1.2);
+}
+
+.intro-link:active, .download-btn:active{
+    transform: scale(1.2);
     box-shadow: 0px 0px 10px #00000050;
-    transform: scale(1.3);
+    
 }
 
-/* Музыка */
-
-.music{
-    color:black;
-    background-color: #dddddd;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    flex-direction: column;
-    justify-items: center;
-    align-items: center;
-    padding-bottom: 30px;
-}
-
-.music-name{
+.section-name{
     padding: 15px;
     padding-bottom: 0;
     padding-left: 25px;
@@ -151,23 +143,37 @@ nav{
     align-items: center;
 }
 
+/* Музыка */
+
+.post-section{
+    color:black;
+    background-color: #dddddd;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
 .music-type{
     font-size: smaller;
 }
 
 .audio-post{
+    box-shadow: 0px 0px 15px #00000020;
     width: 94%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
     background-color: #f0f0f0;
-    margin: 25px 15px 15px 15px;
+    margin: 15px 15px 15px 15px;
     margin-bottom: 0;
     border-radius: 15px;
 }
 
-.audio-info{
+.post-info{
     margin: 10px 10px 0 15px;
     font-size: medium;
     display: flex;
@@ -210,12 +216,64 @@ audio{
     box-shadow: 0px 0px 3px #0000002c;
 }
 
+/* ВИДЕО */
+
+.video-post{
+    box-shadow: 0px 0px 15px #00000020;
+    width: 94%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-between;
+    background-color: #f0f0f0;
+    margin: 15px 15px 15px 15px;
+    margin-bottom: 0;
+    border-radius: 15px;
+}
+
+.video-text{
+    margin-top: 10px;
+}
+
+.video-link{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.video{
+    margin: 20px 25px 20px 25px;
+    width: 700px;
+    height: 394px;
+    box-shadow: 0px 0px 5px #0000006e;
+}
+
+.video-section {
+    color:black;
+    background-color: #dddddd;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    padding-bottom: 30px;
+}
 /* АДАПТИВНЫЙ */
 
 @media screen and (min-width: 1200px) {
 
-    .music{
+    .post-section{
         grid-template-columns: repeat(4, 1fr);
+    }
+    
+    .video-section{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .video{
+        width: 534px;
+        height: 300px;
     }
 
     .menu li a.logo{
@@ -304,8 +362,14 @@ audio{
         font-size: small;
     }
 
-    .music{
+    .post-section{
         display: flex;
+    }
+
+    .video{
+        max-width: 410px;
+        width: 96%;
+        height: 230px;
     }
 
 }
