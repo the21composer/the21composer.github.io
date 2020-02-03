@@ -135,6 +135,7 @@ nav{
     padding: 15px;
     padding-bottom: 0;
     padding-left: 25px;
+    padding-right: 25px;
     border-radius: 15px;
     font-weight: lighter;
     font-size: x-large;
@@ -158,6 +159,28 @@ nav{
 
 .music-type{
     font-size: smaller;
+    display: flex;
+    align-items: center;
+}
+
+#cover-type{
+    position: absolute;
+    left:-9999px;
+}
+
+.indicator{
+    width: 10pt;
+    height: 10pt;
+    margin-right: 5px;
+    margin-top: 1px;
+    border: 3px solid #fff;
+    background-color: #000000ab;
+    border-radius: 15px;
+    transition: all 0.2s ease;
+}
+
+#cover-type:not(:checked) + label{
+    background-color: #fff;
 }
 
 .audio-post{
