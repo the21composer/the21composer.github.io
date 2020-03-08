@@ -11,31 +11,199 @@
 </head>
 <body>
     <div class="top">
-   
+    <header>
+        <nav>
+            <input type="checkbox" id="checkbox-nav">
+            <label for="checkbox-nav">
+                <ul class="menu touch">
+                    <li><a class="logo bright">forever alove</a></li>
+                    <li id="mlink"><a class="link calm" id="#music">music</a></li>
+                    <li id="mlink"><a class="link calm" id="#video">video</a></li>
+                    <li id="mlink"><a class="link calm">dev</a></li>
+                    <li id="mlink"><a class="link calm">about</a></li>
+                </ul>
+                <span class="toggle">
+                    <a class="logo">forever alove</a>
+                    <img class="burger" src="burger.svg">
+                </span> 
+            </label>
+        </nav>
+    </header>
     <section id="intro">
-        <span class="bright" id="greeting">C 8 марта, дорогие девочки!</span>
-        <article class="descript calm">Прекрасной половине группы 8381 от всех мальчиков</article>
+        <span class="bright" id="greeting">привет. я программист.<br>но в душе композитор.</span>
+        <article class="descript calm">я сочиняю на фортепиано, делаю ремиксы, а иногда и свои треки. еще я программирую, фотографирую, и все это скоро будет здесь</article>
     </section>
+    <section class="intro-links">
+        <div class="intro-link"><a class="calm soc-btn" target="_blank" id="https://vk.com/forever_alove">VK</a></div>
+        <div class="intro-link"><a class="calm soc-btn" target="_blank" id="https://www.instagram.com/the21composer">Inst</a></div>
+        <div class="intro-link"><a class="calm soc-btn" target="_blank" id="https://www.youtube.com/channel/UC331TmQoaB0-EocWLoAtzwQ/">YouTube</a></div>
+    </section>
+    </div>
+    <div class="section-name" id="music">
+        <div>music</div>
+        <div class="music-type">
+            <input id="cover-type" type="checkbox"> 
+            <label for="cover-type" class="indicator"></label>
+            <label for="cover-type">covers</label>
+        </div>
     </div>
     <section class="post-section">
-    <div class = "mart">
-        <h4 style="text-align: center">Вероника, Лиза, Олеся, Маша и Настя</h4> <br> 
-         Поздравляем вас с этим милым праздником! Спасибо вам за то, что вы делаете каждый день в вузе лучше, поднимаете настроение, украшаете нашу группу.
-        <br> Желаем, чтобы
-        <ul class = "ulmart">
-            <li><i>Тимур</i> ставил вам высокие баллы за лабы</li>
-            <li><i>Ефремов</i> не задавал лишних вопросов на сдаче</li>
-            <li><i>Малов</i> давал легкие задачки и не мучал с ДЗ</li>
-            <li><i>Балтрашевич</i> восхищался вашими программами</li>
-            <li><i>Толкачева</i> ставила всем +балл за лекции</li>
-        </ul>
-        <br> А мы в свою очередь будем стараться, чтобы все так и было <br><br>
-            <h4 style="text-align: center">А теперь, самое оригинальное поздравление в мире </h4> <br>
-        <p>Желаем вам оставаться такими же уникальными<i><small>, как решения задач от Малова </small></i> и брать от каждой минуты своей жизни всё, <i><small>как он же делает это на лекциях</small></i>. Пусть в вашей жизни будет место удивлению, <i><small>как Балтрашевичу на наших лабах</small></i>, и она будет такой понятной и лёгкой, <i><small>как будто к ней написан красивый хэлп</small></i>. Пусть у вас реже встречаются сегфолты и чаще 0 ворнингов. <i><small>И нет, это не только про программирование</small></i>
-        <br> Невозможно не пожелать вам оставаться такими же красивыми, ведь без вас учёба была бы невероятно бескрасочной<i><small>, так что поменьше вам пар в 8 утра</small></i>. Не теряйте жизнелюбия и несмотря на все трудности пройдите <i><small>как путь обучения, так и</small></i> путь счастливой жизни.
-        <br> </p> <br>
-        <img src="heart.gif" style="width: 90%">
-    </div>
+        <article class="audio-post cover">
+            <div class="post-info">
+                <div class="audio-text">
+                    <small>егор натс</small>
+                    <h2>скандал</h2> <br>
+                    piano <br> 
+                    cover <br>
+                    09.03.2020
+                </div>
+                <img class="audio-pic" src="скандал.jpg">
+            </div>
+            <div class="audio">
+                <audio src="скандал.mp3" preload="metadata" controls></audio>
+                <img class="download-btn" id="https://drive.google.com/open?id=1DMTndJT0NCLG040DvlL-urrVchlJKIXi" src="download.png"></a>
+            </div>
+        </article>
+        <article class="audio-post cover">
+            <div class="post-info">
+                <div class="audio-text">
+                    <small>pyrokinesis</small>
+                    <h2>клубника в декабре</h2> <br>
+                    piano <br> 
+                    cover <br>
+                    31.12.2019
+                </div>
+                <img class="audio-pic" src="клубника.jpg">
+            </div>
+            <div class="audio">
+                <audio src="клубника.mp3" preload="metadata" controls></audio>
+                <img class="download-btn" id="https://drive.google.com/open?id=1M_rJzD-F635IJPJvVwEMie6Ol2B7LNcf" src="download.png"></a>
+            </div>
+        </article>
+        <article class="audio-post composition">
+            <div class="post-info">
+                <div class="audio-text">
+                    <h2>2711</h2> <br>
+                    piano <br> 
+                    expromt <br>
+                    9.12.2019
+                </div>
+                <img class="audio-pic" src="2711.jpg">
+            </div>
+            <div class="audio">
+                <audio src="2711.mp3" preload="metadata" controls></audio>
+                <img class="download-btn" id="https://drive.google.com/open?id=13u-YC9h5yHmxs21k1WMO7lU-xVkf7mZw" src="download.png"></a>
+            </div>
+        </article>
+        <article class="audio-post composition">
+            <div class="post-info">
+                <div class="audio-text">
+                    <h2>qualm</h2> <br>
+                    piano <br> 
+                    composition <br>
+                    4.12.2019
+                </div>
+                <img class="audio-pic" src="qualm.jpg">
+            </div>
+            <div class="audio">
+                <audio src="qualm.mp3" preload="metadata" controls></audio>
+                <img class="download-btn" id="https://drive.google.com/open?id=10P1R-v1A-0tDETFGhrepJO77XbbIIdQZ" src="download.png"></a>
+            </div>
+        </article>
+        <article class="audio-post cover">
+            <div class="post-info">
+                <div class="audio-text">
+                    <small>джизус</small>
+                    <h2>девочка в классе</h2> <br>
+                    piano <br> 
+                    cover <br>
+                    18.11.2019
+                </div>
+                <img class="audio-pic" src="girl.jpg">
+            </div>
+            <div class="audio">
+                <audio src="girl.mp3" preload="metadata" controls></audio>
+                <img class="download-btn" id="https://drive.google.com/open?id=19HkwJIaAo-zNmGzQir1IpGGpfwi7x4kR" src="download.png"></a>
+            </div>
+        </article>
+        <article class="audio-post composition">
+            <div class="post-info">
+                <div class="audio-text">
+                    <h2>1909</h2> <br>
+                    piano <br> 
+                    expromt <br>
+                    29.9.2019
+                </div>
+                <img class="audio-pic" src="1909.jpg">
+            </div>
+            <div class="audio">
+                <audio src="1909.mp3" preload="metadata" controls></audio>
+                <img class="download-btn" id="https://drive.google.com/open?id=1QNEbHE9AJjClSbGeNZ3sWYJtikM5h6Fw" src="download.png"></a>
+            </div>
+        </article>
+        <article class="audio-post cover">
+            <div class="post-info">
+                <div class="audio-text">
+                    <small>AJR</small>
+                    <h2>weak</h2> <br>
+                    piano <br> 
+                    cover <br>
+                    30.8.2019
+                </div>
+                <img class="audio-pic" src="weak.jpg">
+            </div>
+            <div class="audio">
+                <audio src="weak.mp3" preload="metadata" controls></audio>
+                <img class="download-btn" id="https://drive.google.com/open?id=1U40hOsLxlqjVjr1UNSaZMBWtLbpKh6Hc" src="download.png"></a>
+            </div>
+        </article>
+        <article class="audio-post composition">
+            <div class="post-info">
+                <div class="audio-text">
+                    <h2>scattered</h2> <br>
+                    piano <br> 
+                    composition <br>
+                    12.8.2019
+                </div>
+                <img class="audio-pic" src="scattered.jpg">
+            </div>
+            <div class="audio">
+                <audio src="scattered.mp3" preload="metadata" controls></audio>
+                <img class="download-btn" id="https://drive.google.com/open?id=1fsb7hshKmrVPRUgWUZ0PSWWmB2a7URjs" src="download.png"></a>
+            </div>
+        </article>
     </section>
+
+    <hr>
+
+    <div class="section-name" id="video">
+        <div>video</div>
+    </div>
+    <section class="video-section">
+        <article class="video-post">
+            <div class="post-info">
+                <div class="video-text">
+                    <small>AJR</small>
+                    <h2>weak</h2> | piano cover
+                </div>
+            </div>
+            <div class="video-link">
+                <iframe class="video" src="https://www.youtube.com/embed/_HW41oixbNI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </article>
+        <article class="video-post">
+            <div class="post-info">
+                <div class="video-text">
+                    <small>нервы</small>
+                    <h2>слишком влюблен</h2> | piano cover
+                </div>
+            </div>
+            <div class="video-link">
+                <iframe class="video" src="https://www.youtube.com/embed/uJ1pNfRUmpM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    
+            </div>
+        </article>
+    </section>
+    <script src="script.js">
+    </script>
 </body>
 </html> 
