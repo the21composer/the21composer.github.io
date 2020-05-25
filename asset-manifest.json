@@ -1,17 +1,19 @@
 {
   "files": {
     "main.css": "/static/css/main.c108ad4b.chunk.css",
-    "main.js": "/static/js/main.dd628878.chunk.js",
-    "main.js.map": "/static/js/main.dd628878.chunk.js.map",
+    "main.js": "/static/js/main.32a57554.chunk.js",
+    "main.js.map": "/static/js/main.32a57554.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.34f306bf.js",
     "runtime-main.js.map": "/static/js/runtime-main.34f306bf.js.map",
-    "static/js/2.6380a4fb.chunk.js": "/static/js/2.6380a4fb.chunk.js",
-    "static/js/2.6380a4fb.chunk.js.map": "/static/js/2.6380a4fb.chunk.js.map",
+    "static/js/2.8ebb1a76.chunk.js": "/static/js/2.8ebb1a76.chunk.js",
+    "static/js/2.8ebb1a76.chunk.js.map": "/static/js/2.8ebb1a76.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.5d1e0f8c5a1977c390e0eae54e6f58db.js": "/precache-manifest.5d1e0f8c5a1977c390e0eae54e6f58db.js",
+    "precache-manifest.49bcb8a1043d593d650ded091f1a3adb.js": "/precache-manifest.49bcb8a1043d593d650ded091f1a3adb.js",
     "service-worker.js": "/service-worker.js",
     "static/css/main.c108ad4b.chunk.css.map": "/static/css/main.c108ad4b.chunk.css.map",
-    "static/js/2.6380a4fb.chunk.js.LICENSE.txt": "/static/js/2.6380a4fb.chunk.js.LICENSE.txt",
+    "static/js/2.8ebb1a76.chunk.js.LICENSE.txt": "/static/js/2.8ebb1a76.chunk.js.LICENSE.txt",
+    "static/media/1909.mp3": "/static/media/1909.3b32f513.mp3",
+    "static/media/1909.jpg": "/static/media/1909.7e188e0e.jpg",
     "static/media/2711.mp3": "/static/media/2711.ca7bb6f9.mp3",
     "static/media/2711.jpg": "/static/media/2711.fee0b110.jpg",
     "static/media/Intro.css": "/static/media/menubg.cf903abc.jpg",
@@ -20,14 +22,18 @@
     "static/media/qualm.mp3": "/static/media/qualm.0d4e89e1.mp3",
     "static/media/qualm.jpg": "/static/media/qualm.12931a31.jpg",
     "static/media/scandal.jpg": "/static/media/scandal.fdadcff3.jpg",
+    "static/media/scattered.mp3": "/static/media/scattered.44b83896.mp3",
+    "static/media/scattered.jpg": "/static/media/scattered.ca9b6193.jpg",
+    "static/media/weak.jpg": "/static/media/weak.0c28b34d.jpg",
+    "static/media/weak.mp3": "/static/media/weak.b56fb46f.mp3",
     "static/media/клубника.mp3": "/static/media/клубника.500d61ff.mp3",
     "static/media/клубника.jpg": "/static/media/клубника.63cd2fd2.jpg",
     "static/media/скандал.mp3": "/static/media/скандал.f61be131.mp3"
   },
   "entrypoints": [
     "static/js/runtime-main.34f306bf.js",
-    "static/js/2.6380a4fb.chunk.js",
+    "static/js/2.8ebb1a76.chunk.js",
     "static/css/main.c108ad4b.chunk.css",
-    "static/js/main.dd628878.chunk.js"
+    "static/js/main.32a57554.chunk.js"
   ]
 }
