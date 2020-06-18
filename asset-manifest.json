@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/static/css/main.2dbfa5dc.chunk.css",
-    "main.js": "/static/js/main.cbd68e37.chunk.js",
-    "main.js.map": "/static/js/main.cbd68e37.chunk.js.map",
+    "main.js": "/static/js/main.d7ae4633.chunk.js",
+    "main.js.map": "/static/js/main.d7ae4633.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.34f306bf.js",
     "runtime-main.js.map": "/static/js/runtime-main.34f306bf.js.map",
-    "static/js/2.f2ef1e7f.chunk.js": "/static/js/2.f2ef1e7f.chunk.js",
-    "static/js/2.f2ef1e7f.chunk.js.map": "/static/js/2.f2ef1e7f.chunk.js.map",
+    "static/js/2.472fae6e.chunk.js": "/static/js/2.472fae6e.chunk.js",
+    "static/js/2.472fae6e.chunk.js.map": "/static/js/2.472fae6e.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.736a6aa0de4f2303e46c4dfe2d292cca.js": "/precache-manifest.736a6aa0de4f2303e46c4dfe2d292cca.js",
+    "precache-manifest.10620b0b3875bea14dd0c0d54532bbee.js": "/precache-manifest.10620b0b3875bea14dd0c0d54532bbee.js",
     "service-worker.js": "/service-worker.js",
     "static/css/main.2dbfa5dc.chunk.css.map": "/static/css/main.2dbfa5dc.chunk.css.map",
-    "static/js/2.f2ef1e7f.chunk.js.LICENSE.txt": "/static/js/2.f2ef1e7f.chunk.js.LICENSE.txt",
+    "static/js/2.472fae6e.chunk.js.LICENSE.txt": "/static/js/2.472fae6e.chunk.js.LICENSE.txt",
     "static/media/1909.mp3": "/static/media/1909.3b32f513.mp3",
     "static/media/1909.jpg": "/static/media/1909.7e188e0e.jpg",
     "static/media/2711.mp3": "/static/media/2711.ca7bb6f9.mp3",
@@ -27,6 +27,8 @@
     "static/media/scandal.jpg": "/static/media/scandal.fdadcff3.jpg",
     "static/media/scattered.mp3": "/static/media/scattered.44b83896.mp3",
     "static/media/scattered.jpg": "/static/media/scattered.ca9b6193.jpg",
+    "static/media/sos.mp3": "/static/media/sos.0cf8340c.mp3",
+    "static/media/sos.jpg": "/static/media/sos.3b0cd07d.jpg",
     "static/media/weak.jpg": "/static/media/weak.0c28b34d.jpg",
     "static/media/weak.mp3": "/static/media/weak.b56fb46f.mp3",
     "static/media/кадры.jpg": "/static/media/кадры.0b44d480.jpg",
@@ -38,8 +40,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.34f306bf.js",
-    "static/js/2.f2ef1e7f.chunk.js",
+    "static/js/2.472fae6e.chunk.js",
     "static/css/main.2dbfa5dc.chunk.css",
-    "static/js/main.cbd68e37.chunk.js"
+    "static/js/main.d7ae4633.chunk.js"
   ]
 }
