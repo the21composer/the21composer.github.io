@@ -1,0 +1,46 @@
+.intro{
+    background-image: url('menubg.jpg');
+    background-position: center;
+    background-size: cover;
+    padding-top: 80px;
+    padding-bottom: 20px;
+    font-family: Montserrat, serif;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    margin-bottom: 15px;
+    height: 120px;
+    width: 224px;
+    background-image: url('fawhiteboldshadow2.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.description{
+    color: #dddddd;
+    width: 85%;
+    font-size: medium;
+    text-shadow: 0 0 25px rgba(0,0,0,0.8);
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.linkBox{
+    width: 99%;
+    padding-right: 15px;
+}
+
+@media screen and (max-width: 765px) {
+    .description{
+        font-size: 11pt;
+    }
+    .intro{
+        height: 350px;
+    }
+}

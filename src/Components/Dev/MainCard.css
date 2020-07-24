@@ -1,0 +1,150 @@
+.name {
+    animation: text-appear .8s cubic-bezier(.51,.92,.24,1.15);
+    font-family: 'Montserrat', serif;
+    font-weight: bold;
+    color: white;
+    font-size: 20pt;
+    display: flex;
+    align-items: center;
+    text-shadow: 0px 0px 5px #939393;
+}
+
+.dev-intro {
+    min-height: 300px;
+    height: fit-content;
+    position: relative;
+}
+
+.shadower {
+    position: absolute;
+    background: rgba(0, 0, 0, 1);
+    opacity: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    animation: shadow 0.7s linear;
+}
+
+.tech-list {
+    align-items: center;
+    justify-content: center;
+}
+
+.anti-shadow {
+    animation: anti-shadow 1s ease;
+}
+
+.tech-elem {
+    box-shadow: 0 3px 20px #00000070 !important;
+    opacity: 0.8;
+    margin: 5px;
+    font-weight: lighter;
+    cursor: pointer;
+    padding: 8px 10px;
+    height: min-content;
+    border-radius: 20px !important;
+    font-family: Montserrat, serif;
+    font-size: 13pt;
+}
+
+.tech-list-small {
+    padding-bottom: 10px;
+    align-items: center;
+}
+
+.tech-elem-small {
+    box-shadow: 0 0 0 !important;
+    font-weight: lighter;
+    border: 1px solid #919191;
+    opacity: 1;
+    margin-right: 10px;
+    margin-bottom: 3px;
+    padding: 5px 8px;
+    height: min-content;
+    border-radius: 20px !important;
+    font-family: Montserrat, serif;
+    font-size: 11pt;
+}
+
+.custom-name {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.main-text {
+    text-align: center;
+    text-shadow: 0px 0px 5px #707070;
+    color: #f7f7f7;
+}
+
+.link-icon {
+    margin-left: 8px !important;
+}
+
+.logo-dev{
+    margin-bottom: 15px;
+    height: 70px;
+    width: 130px;
+}
+
+.list {
+    padding: 0 0 0 5px;
+}
+
+.tags-name {
+    padding-right: 10px;
+    color: #b3b3b3;
+}
+
+@-webkit-keyframes text-appear {
+    0% {
+        transform: scale(1.6) translateY(50px);
+    }
+    40% {
+        transform: scale(1.6) translateY(50px);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes text-appear {
+     0% {
+         transform: scale(1.6) translateY(50px);
+     }
+     40% {
+         transform: scale(1.6) translateY(50px);
+     }
+     100% {
+         transform: scale(1);
+     }
+ }
+
+@keyframes shadow {
+    0% {
+        opacity: 0.8;
+    }
+    40% {
+        opacity: 0.8;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes anti-shadow {
+    0% {
+        transform: scale(0.95);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(0.95);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
