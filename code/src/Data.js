@@ -30,16 +30,16 @@ export const reactData = {
     tech: ["React", "HTML/CSS/JQuery"],
     images: [
         {
-            original: 'static/reactProj/darkPC.png',
-            thumbnail: 'static/reactProj/darkPC.png',
+            original: 'static/reactProj/darkPC.jpg',
+            thumbnail: 'static/reactProj/darkPC.jpg',
         },
         {
-            original: 'static/reactProj/whitePC.png',
-            thumbnail: 'static/reactProj/whitePC.png',
+            original: 'static/reactProj/whitePC.jpg',
+            thumbnail: 'static/reactProj/whitePC.jpg',
         },
         {
-            original: 'static/reactProj/darkSwitch.png',
-            thumbnail: 'static/reactProj/darkSwitch.png',
+            original: 'static/reactProj/darkSwitch.jpg',
+            thumbnail: 'static/reactProj/darkSwitch.jpg',
         },
     ]
 };
@@ -48,23 +48,48 @@ export const repairAppData = {
     tech: ["Python", "Flask", "MongoDB", "HTML/CSS/JQuery"],
     images: [
         {
-            original: 'static/repairProj/main.png',
-            thumbnail: 'static/repairProj/main.png',
+            original: 'static/repairProj/main.jpg',
+            thumbnail: 'static/repairProj/main.jpg',
         },
         {
-            original: 'static/repairProj/list.png',
-            thumbnail: 'static/repairProj/list.png',
+            original: 'static/repairProj/list.jpg',
+            thumbnail: 'static/repairProj/list.jpg',
         },
         {
-            original: 'static/repairProj/date.png',
-            thumbnail: 'static/repairProj/date.png',
+            original: 'static/repairProj/date.jpg',
+            thumbnail: 'static/repairProj/date.jpg',
         },
         {
-            original: 'static/repairProj/rem.png',
-            thumbnail: 'static/repairProj/rem.png',
+            original: 'static/repairProj/rem.jpg',
+            thumbnail: 'static/repairProj/rem.jpg',
         },
     ]
+};
 
+export const qtAppData = {
+    tech: ["C++/Qt"],
+    images: [
+        {
+            original: 'static/QtProj/graph1.jpg',
+            thumbnail: 'static/QtProj/graph1.jpg',
+        },
+        {
+            original: 'static/QtProj/graph2.jpg',
+            thumbnail: 'static/QtProj/graph2.jpg',
+        },
+        {
+            original: 'static/QtProj/hash_1.png',
+            thumbnail: 'static/QtProj/hash_1.png',
+        },
+        {
+            original: 'static/QtProj/hash_2.png',
+            thumbnail: 'static/QtProj/hash_2.png',
+        },
+        {
+            original: 'static/QtProj/hash_3.png',
+            thumbnail: 'static/QtProj/hash_3.png',
+        },
+    ]
 };
 
 

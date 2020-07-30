@@ -11,10 +11,10 @@ import {
     IconButton,
     makeStyles
 } from "@material-ui/core";
-import LinkIcon from '@material-ui/icons/Link';
+import GitHubIcon from '@material-ui/icons/GitHub';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import {InfoTypo, NameTypo, SubTypo} from "..";
-import {repairAppData} from "../../Data";
+import {reactData} from "../../Data";
 import ImageGallery from 'react-image-gallery';
 import "react-image-gallery/styles/css/image-gallery.css"
 
@@ -30,6 +30,7 @@ const useStyles = makeStyles((theme) => ({
         fontSize:theme.typography.pxToRem(15),
         flexBasis:'35%',
         flexShrink:0,
+        paddingRight: 8
     },
     secondaryHeading:{
         fontFamily:"montserrat",
@@ -54,7 +55,7 @@ const CAccordion = withStyles({
     }
 })(ExpansionPanel);
 
-export const RepairAppBlock = (props) => {
+export const ReactBlock = (props) => {
     const classes = useStyles();
     const [expanded, setExpanded] = React.useState(false);
 
@@ -69,7 +70,7 @@ export const RepairAppBlock = (props) => {
                     <Grid xs={'auto'}>
                         <SubTypo className="tags-name">Tags: </SubTypo>
                     </Grid>
-                    {repairAppData.tech.map(tech =>
+                    {reactData.tech.map(tech =>
                         <Grid xs={'auto'}>
                             <Card className='tech-elem-small' id={tech}>
                                 {tech}
@@ -81,13 +82,12 @@ export const RepairAppBlock = (props) => {
                     <Grid item xs={12} lg={7}>
 
                         <NameTypo gutterBottom className={"custom-name"}>
-                            Repair Control App
+                            Сайт the21composer
                             <IconButton className="link-icon" color="secondary"
-                                        href="https://github.com/the21composer/RepairControlApp"><LinkIcon/></IconButton>
+                                        href="https://github.com/the21composer/the21composer.github.io"><GitHubIcon/></IconButton>
                         </NameTypo>
                         <InfoTypo gutterBottom>
-                            Многопользовательское веб-приложение
-                            для контроля тех. обслуживания и ремонта
+                            Сайт-страничка для творчества и хобби <br/> <br/>
                         </InfoTypo>
                         <div className={classes.root}>
                             <CAccordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
@@ -96,14 +96,14 @@ export const RepairAppBlock = (props) => {
                                     aria-controls="panel1bh-content"
                                     id="panel1bh-header"
                                 >
-                                    <Typography className={classes.heading}>Основное</Typography>
-                                    <Typography className={classes.secondaryHeading}>Чемпионат, сроки</Typography>
+                                    <Typography className={classes.heading}>React</Typography>
+                                    <Typography className={classes.secondaryHeading}>Особенности</Typography>
                                 </ExpansionPanelSummary>
                                 <ExpansionPanelDetails>
                                     <SubTypo>
-                                        <li>Проект выполнен в рамках чемпионата <b>CASE-IN 2020</b> (этап ЛЭТИ)</li>
-                                        <li>Разработка велась 10 дней (по регламенту чемпионата)</li>
-                                        <li>Приложение позволяет следить за оборудованием, организовывать ремонтные работы</li>
+                                        <li>С нуля созданный <i>LazyLoader</i> для YouTube-видео</li>
+                                        <li><i>React Routes</i> для маршрутизации</li>
+                                        <li><i>React Scroll</i> для кнопок-ссылок на странице</li>
                                     </SubTypo>
                                 </ExpansionPanelDetails>
                             </CAccordion>
@@ -113,17 +113,16 @@ export const RepairAppBlock = (props) => {
                                     aria-controls="panel2bh-content"
                                     id="panel2bh-header"
                                 >
-                                    <Typography className={classes.heading}>Функционал</Typography>
+                                    <Typography className={classes.heading}>Material UI</Typography>
                                     <Typography className={classes.secondaryHeading}>
-                                        Для кого и как
+                                        Компоненты и фишки
                                     </Typography>
                                 </ExpansionPanelSummary>
                                 <ExpansionPanelDetails>
                                     <SubTypo>
-                                        <li><b>Тип пользователей:</b> рем. работник, начальник участка, начальник рем. бригады, начальник цеха</li>
-                                        <li>Просмотр данных об оборудовании в разворачиваемых таблицах</li>
-                                        <li>Создание записей для проведения ремонта</li>
-                                        <li>Просмотр записей, фиксирование этапов выполнения, удаление</li>
+                                        <li>Темная и светлая тема с помощью <i>Mui Theme</i></li>
+                                        <li>Глубоко переработанный дизайн компонентов с помощью <i>withStyles</i></li>
+                                        <li>Дополнения: <i>Material UI Image</i></li>
                                     </SubTypo>
                                 </ExpansionPanelDetails>
                             </CAccordion>
@@ -133,17 +132,18 @@ export const RepairAppBlock = (props) => {
                                     aria-controls="panel3bh-content"
                                     id="panel3bh-header"
                                 >
-                                    <Typography className={classes.heading}>Технологии</Typography>
+                                    <Typography className={classes.heading}>Общее</Typography>
                                     <Typography className={classes.secondaryHeading}>
-                                        Flask, Mongo, Bootstrap
+                                        Цель, планы
                                     </Typography>
                                 </ExpansionPanelSummary>
                                 <ExpansionPanelDetails>
                                     <SubTypo>
-                                        <li>Авторизация с помощью <i>Flask-Session</i></li>
-                                        <li>Routing и GET/POST запросы через <i>Flask</i></li>
-                                        <li>Работа с MongoDB с помощью ООП API <i>pymodm</i></li>
-                                        <li>Адаптивная верстка с помощью <i>Bootstrap</i></li>
+                                        <b>Цель:</b> создать страницу, на которой можно будет удобно размещать свое
+                                        творчество, проекты, наработки.
+                                        <br/><br/>
+                                        <b>Планы:</b> в будущем планируется добавить раздел с фотографиями, дополнить
+                                        раздел проектов, глубже изучать React и MaterialUI, их фишки и возможности.
                                     </SubTypo>
                                 </ExpansionPanelDetails>
                             </CAccordion>
@@ -151,7 +151,7 @@ export const RepairAppBlock = (props) => {
                     </Grid>
                     <Grid item xs={12} lg={5} className="gallery">
                         <Grid xs={12}>
-                            <ImageGallery items={repairAppData.images} showPlayButton={false} showNav={false}/>
+                            <ImageGallery items={reactData.images} showPlayButton={false} showNav={false}/>
                         </Grid>
                     </Grid>
                 </Grid>

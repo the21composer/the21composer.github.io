@@ -11,10 +11,10 @@ import {
     IconButton,
     makeStyles
 } from "@material-ui/core";
-import LinkIcon from '@material-ui/icons/Link';
+import GitHubIcon from '@material-ui/icons/GitHub';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import {InfoTypo, NameTypo, SubTypo} from "..";
-import {reactData} from "../../Data";
+import {qtAppData} from "../../Data";
 import ImageGallery from 'react-image-gallery';
 import "react-image-gallery/styles/css/image-gallery.css"
 
@@ -28,7 +28,6 @@ const useStyles = makeStyles((theme) => ({
     heading:{
         fontFamily:"montserrat",
         fontSize:theme.typography.pxToRem(15),
-        flexBasis:'35%',
         flexShrink:0,
     },
     secondaryHeading:{
@@ -54,7 +53,7 @@ const CAccordion = withStyles({
     }
 })(ExpansionPanel);
 
-export const ReactBlock = (props) => {
+export const QtAppBlock = (props) => {
     const classes = useStyles();
     const [expanded, setExpanded] = React.useState(false);
 
@@ -69,7 +68,7 @@ export const ReactBlock = (props) => {
                     <Grid xs={'auto'}>
                         <SubTypo className="tags-name">Tags: </SubTypo>
                     </Grid>
-                    {reactData.tech.map(tech =>
+                    {qtAppData.tech.map(tech =>
                         <Grid xs={'auto'}>
                             <Card className='tech-elem-small' id={tech}>
                                 {tech}
@@ -81,12 +80,12 @@ export const ReactBlock = (props) => {
                     <Grid item xs={12} lg={7}>
 
                         <NameTypo gutterBottom className={"custom-name"}>
-                            Сайт the21composer
+                            Проекты на Qt
                             <IconButton className="link-icon" color="secondary"
-                                        href="https://github.com/the21composer/the21composer.github.io"><LinkIcon/></IconButton>
+                                        href="https://github.com/the21composer?tab=repositories&q=&type=&language=c%2B%2B"><GitHubIcon/></IconButton>
                         </NameTypo>
                         <InfoTypo gutterBottom>
-                            Сайт-страничка для творчества и хобби
+                            Курсовые и лабораторные работы
                         </InfoTypo>
                         <div className={classes.root}>
                             <CAccordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
@@ -95,14 +94,15 @@ export const ReactBlock = (props) => {
                                     aria-controls="panel1bh-content"
                                     id="panel1bh-header"
                                 >
-                                    <Typography className={classes.heading}>React</Typography>
-                                    <Typography className={classes.secondaryHeading}>Особенности</Typography>
+                                    <Typography className={classes.heading}>Графический редактор графов</Typography>
+
                                 </ExpansionPanelSummary>
                                 <ExpansionPanelDetails>
                                     <SubTypo>
-                                        <li>С нуля созданный <i>LazyLoader</i> для YouTube-видео</li>
-                                        <li><i>React Routes</i> для маршрутизации</li>
-                                        <li><i>React Scroll</i> для кнопок-ссылок на странице</li>
+                                        <li>Создание, перемещение, выделение вершин графа мышкой</li>
+                                        <li>Адаптивный интерфейс и панель инструментов</li>
+                                        <li>Сохранение и загрузка графов из файла</li>
+                                        <li>Визуализация алгоритма Дейкстры с сохранением путей</li>
                                     </SubTypo>
                                 </ExpansionPanelDetails>
                             </CAccordion>
@@ -112,16 +112,13 @@ export const ReactBlock = (props) => {
                                     aria-controls="panel2bh-content"
                                     id="panel2bh-header"
                                 >
-                                    <Typography className={classes.heading}>Material UI</Typography>
-                                    <Typography className={classes.secondaryHeading}>
-                                        Компоненты и фишки
-                                    </Typography>
+                                    <Typography className={classes.heading}>Тестирование вставки в хеш-таблицу</Typography>
                                 </ExpansionPanelSummary>
                                 <ExpansionPanelDetails>
                                     <SubTypo>
-                                        <li>Темная и светлая тема с помощью <i>Mui Theme</i></li>
-                                        <li>Глубоко переработанный дизайн компонентов с помощью <i>withStyles</i></li>
-                                        <li>Дополнения: <i>Material UI Image</i></li>
+                                        <li>Настраиваемся генерация файлов для проведения тестирования</li>
+                                        <li>Графики, обновляющиеся в режиме реального времени</li>
+                                        <li>Возможность сохранить результаты тестирования в файл</li>
                                     </SubTypo>
                                 </ExpansionPanelDetails>
                             </CAccordion>
@@ -132,17 +129,10 @@ export const ReactBlock = (props) => {
                                     id="panel3bh-header"
                                 >
                                     <Typography className={classes.heading}>Общее</Typography>
-                                    <Typography className={classes.secondaryHeading}>
-                                        Цель, планы
-                                    </Typography>
                                 </ExpansionPanelSummary>
                                 <ExpansionPanelDetails>
                                     <SubTypo>
-                                        <b>Цель:</b> создать страницу, на которой можно будет удобно размещать свое
-                                        творчество, проекты, наработки.
-                                        <br/><br/>
-                                        <b>Планы:</b> в будущем планируется добавить раздел с фотографиями, дополнить
-                                        раздел проектов, глубже изучать React и MaterialUI, их фишки и возможности.
+                                        Проекты были созданы в рамках лабораторных или курсовых работ по дисциплинам "Построение и анализ алгоритмов" и "Алгоритмы и структуры данных"
                                     </SubTypo>
                                 </ExpansionPanelDetails>
                             </CAccordion>
@@ -150,7 +140,7 @@ export const ReactBlock = (props) => {
                     </Grid>
                     <Grid item xs={12} lg={5} className="gallery">
                         <Grid xs={12}>
-                            <ImageGallery items={reactData.images} showPlayButton={false} showNav={false}/>
+                            <ImageGallery items={qtAppData.images} showPlayButton={false} showNav={false}/>
                         </Grid>
                     </Grid>
                 </Grid>
