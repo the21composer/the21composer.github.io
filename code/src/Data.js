@@ -1,31 +1,3 @@
-import cadr from "./Images/кадры.jpg";
-import daynight from "./Images/daynight.jpg"
-import poch from "./Images/pdpch.jpg";
-import scandal from "./Images/scandal.jpg";
-import club from "./Images/клубника.jpg";
-import i2711 from "./Images/2711.jpg";
-import qualm from "./Images/qualm.jpg";
-import girl from "./Images/girl.jpg";
-import i1909 from "./Images/1909.jpg";
-import weak from "./Images/weak.jpg";
-import scattered from "./Images/scattered.jpg";
-import sos from "./Images/sos.jpg";
-import lied from "./Images/соврал.jpg"
-
-import cadrA from "./Audio/кадры.mp3";
-import daynightA from "./Audio/daynight.mp3"
-import pochA from "./Audio/почему да потому что.mp3";
-import scandalA from "./Audio/скандал.mp3";
-import clubA from "./Audio/клубника.mp3";
-import i2711A from "./Audio/2711.mp3";
-import qualmA from "./Audio/qualm.mp3";
-import girlA from "./Audio/girl.mp3";
-import i1909A from "./Audio/1909.mp3";
-import weakA from "./Audio/weak.mp3";
-import scatteredA from "./Audio/scattered.mp3";
-import sosA from "./Audio/sos.mp3";
-import liedA from "./Audio/соврал.mp3"
-
 export const reactData = {
     tech: ["React", "HTML/CSS/JQuery"],
     images: [
@@ -117,14 +89,25 @@ export const videoData = [
 
 export const audioData = [
     {
+        class: "comp",
+        comp: true,
+        name: "leave it behind",
+        type: "piano composition",
+        date: "7.08.2020",
+        img: "/static/images/leave it behind.jpg",
+        audio: "/static/audio/leave it behind.mp3",
+        href: "https://drive.google.com/drive/folders/1-p28i4w_C1emKEOMgds7Rgqc97rvEnHG?usp=sharing"
+    },
+    {
         class: "cover",
         cover: true,
         name: "соврал",
         type: "piano cover",
         auth: "егор натс & mental affection",
         date: "30.06.2020",
-        img: lied,
-        audio: liedA,
+        img: "/static/images/соврал.jpg",
+        audio: "/static/audio/соврал.mp3",
+        href: "https://drive.google.com/drive/folders/1Bn_yuFqQIxzceJUKHmRMYzI6mBZ3YZ3Z?usp=sharing"
     },
     {
         class: "comp",
@@ -132,8 +115,8 @@ export const audioData = [
         name: "stop other signals",
         type: "beat",
         date: "16.06.2020",
-        img: sos,
-        audio: sosA,
+        img: "/static/images/sos.jpg",
+        audio: "/static/audio/sos.mp3",
         href: "https://drive.google.com/drive/folders/1jDBBN__nR6Oq1Ga_5Dq2SxeNKZOo8w_J?usp=sharing"
     },
     {
@@ -143,8 +126,8 @@ export const audioData = [
         type: "piano remix",
         auth: "иван рейс",
         date: "12.05.2020",
-        img: cadr,
-        audio: cadrA,
+        img: "/static/images/кадры.jpg",
+        audio: "/static/audio/кадры.mp3",
         href: "https://drive.google.com/drive/folders/1OnynJAZeh_ectb6XEVxKgyhqlFEHf8nr?usp=sharing"
     },
     {
@@ -152,8 +135,8 @@ export const audioData = [
         name: "daynight",
         type: "piano composition",
         date: "19.04.2020",
-        img: daynight,
-        audio: daynightA,
+        img: "/static/images/daynight.jpg",
+        audio: "/static/audio/daynight.mp3",
         href: "https://drive.google.com/drive/folders/1FGnbzgCW1Nlf0M24aw5iMfN5FCVTkB2F?usp=sharing"
     },
     {
@@ -163,8 +146,8 @@ export const audioData = [
         type: "piano cover",
         auth: "pyrokinesis",
         date: "09.04.2020",
-        img: poch,
-        audio: pochA,
+        img: "/static/images/pdpch.jpg",
+        audio: "/static/audio/почему да потому что.mp3",
         href: "https://drive.google.com/drive/folders/15-JI0nSwW1d0cdFtNLsf1-wnUbdPv8DZ?usp=sharing"
     },
     {
@@ -174,8 +157,8 @@ export const audioData = [
         type: "piano remix",
         auth: "егор натс",
         date: "09.03.2020",
-        img: scandal,
-        audio: scandalA,
+        img: "/static/images/scandal.jpg",
+        audio: "/static/audio/скандал.mp3",
         href: "https://drive.google.com/open?id=1DMTndJT0NCLG040DvlL-urrVchlJKIXi"
     },
     {
@@ -185,8 +168,8 @@ export const audioData = [
         type: "piano cover",
         auth: "pyrokinesis",
         date: "31.12.2019",
-        img: club,
-        audio: clubA,
+        img: "/static/images/клубника.jpg",
+        audio: "/static/audio/клубника.mp3",
         href: "https://drive.google.com/open?id=1M_rJzD-F635IJPJvVwEMie6Ol2B7LNcf"
     },
     {
@@ -195,8 +178,8 @@ export const audioData = [
         name: "2711",
         type: "piano expromt",
         date: "9.12.2019",
-        img: i2711,
-        audio: i2711A,
+        img: "/static/images/2711.jpg",
+        audio: "/static/audio/2711.mp3",
         href: "https://drive.google.com/open?id=13u-YC9h5yHmxs21k1WMO7lU-xVkf7mZw"
     },
     {
@@ -205,8 +188,8 @@ export const audioData = [
         name: "qualm",
         type: "piano composition",
         date: "4.12.2019",
-        img: qualm,
-        audio: qualmA,
+        img: "/static/images/qualm.jpg",
+        audio: "/static/audio/qualm.mp3",
         href: "https://drive.google.com/open?id=10P1R-v1A-0tDETFGhrepJO77XbbIIdQZ"
     },
     {
@@ -216,8 +199,8 @@ export const audioData = [
         type: "piano cover",
         auth: "джизус",
         date: "18.11.2019",
-        img: girl,
-        audio: girlA,
+        img: "/static/images/girl.jpg",
+        audio: "/static/audio/girl.mp3",
         href: "https://drive.google.com/open?id=19HkwJIaAo-zNmGzQir1IpGGpfwi7x4kR"
     },
     {
@@ -226,8 +209,8 @@ export const audioData = [
         name: "1909",
         type: "piano expromt",
         date: "29.09.2019",
-        img: i1909,
-        audio: i1909A,
+        img: "/static/images/1909.jpg",
+        audio: "/static/audio/1909.mp3",
         href: "https://drive.google.com/open?id=1QNEbHE9AJjClSbGeNZ3sWYJtikM5h6Fw"
     },
     {
@@ -237,8 +220,8 @@ export const audioData = [
         type: "piano cover",
         auth: "AJR",
         date: "30.08.2019",
-        img: weak,
-        audio: weakA,
+        img: "/static/images/weak.jpg",
+        audio: "/static/audio/weak.mp3",
         href: "https://drive.google.com/open?id=1U40hOsLxlqjVjr1UNSaZMBWtLbpKh6Hc"
     },
     {
@@ -247,8 +230,8 @@ export const audioData = [
         name: "scattered",
         type: "piano composition",
         date: "12.08.2019",
-        img: scattered,
-        audio: scatteredA,
+        img: "/static/images/scattered.jpg",
+        audio: "/static/audio/scattered.mp3",
         href: "https://drive.google.com/open?id=1DMTndJT0NCLG040DvlL-urrVchlJKIXi"
     },
 
