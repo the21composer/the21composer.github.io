@@ -73,7 +73,7 @@ export const ReactBlock = (props) => {
                     {reactData.tech.map(tech =>
                         <Grid xs={'auto'}>
                             <Card className='tech-elem-small' id={tech}>
-                                {tech}
+                                <InfoTypo>{tech}</InfoTypo>
                             </Card>
                         </Grid>
                     )}

@@ -14,7 +14,7 @@ import {
 import GitHubIcon from '@material-ui/icons/GitHub';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import {InfoTypo, NameTypo, SubTypo} from "..";
-import {qtAppData} from "../../Data";
+import {angularData} from "../../Data";
 import ImageGallery from 'react-image-gallery';
 import "react-image-gallery/styles/css/image-gallery.css"
 
@@ -28,7 +28,9 @@ const useStyles = makeStyles((theme) => ({
     heading:{
         fontFamily:"montserrat",
         fontSize:theme.typography.pxToRem(15),
+        flexBasis:'35%',
         flexShrink:0,
+        paddingRight: 8
     },
     secondaryHeading:{
         fontFamily:"montserrat",
@@ -53,7 +55,7 @@ const CAccordion = withStyles({
     }
 })(ExpansionPanel);
 
-export const QtAppBlock = (props) => {
+export const AngularAppBlock = (props) => {
     const classes = useStyles();
     const [expanded, setExpanded] = React.useState(false);
 
@@ -62,13 +64,12 @@ export const QtAppBlock = (props) => {
     };
     return (
         <DevCard>
-            {/*THIS SITE*/}
             <CardContent>
                 <Grid container xs={12} className='tech-list-small'>
                     <Grid xs={'auto'}>
                         <SubTypo className="tags-name">Tags: </SubTypo>
                     </Grid>
-                    {qtAppData.tech.map(tech =>
+                    {angularData.tech.map(tech =>
                         <Grid xs={'auto'}>
                             <Card className='tech-elem-small' id={tech}>
                                 <InfoTypo>{tech}</InfoTypo>
@@ -80,12 +81,12 @@ export const QtAppBlock = (props) => {
                     <Grid item xs={12} lg={7}>
 
                         <NameTypo gutterBottom className={"custom-name"}>
-                            Проекты на Qt
+                          Администрирование биржи акций
                             <IconButton className="link-icon" color="secondary"
-                                        href="https://github.com/the21composer?tab=repositories&q=&type=&language=c%2B%2B"><GitHubIcon/></IconButton>
+                                        href="https://github.com/the21composer/Angular-Express-Administration-App"><GitHubIcon/></IconButton>
                         </NameTypo>
                         <InfoTypo gutterBottom>
-                            Курсовые и лабораторные работы
+                            Клиент на Angular + сервер на Express для администрирования данных о брокерах и акциях на бирже <br/> <br/>
                         </InfoTypo>
                         <div className={classes.root}>
                             <CAccordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
@@ -94,15 +95,14 @@ export const QtAppBlock = (props) => {
                                     aria-controls="panel1bh-content"
                                     id="panel1bh-header"
                                 >
-                                    <Typography className={classes.heading}>Графический редактор графов</Typography>
-
+                                    <Typography className={classes.heading}>Angular</Typography>
+                                    <Typography className={classes.secondaryHeading}>Особенности</Typography>
                                 </ExpansionPanelSummary>
                                 <ExpansionPanelDetails>
                                     <SubTypo>
-                                        <li>Создание, перемещение, выделение вершин графа мышкой</li>
-                                        <li>Адаптивный интерфейс и панель инструментов</li>
-                                        <li>Сохранение и загрузка графов из файла</li>
-                                        <li>Визуализация алгоритма Дейкстры с сохранением путей</li>
+                                        <li>Использование сервисов для осуществления HTTP запросов</li>
+                                        <li>Независимое обновление информации в каждой карточке</li>
+                                        <li>Быстрый и бесшовный роутинг между вкладками</li>
                                     </SubTypo>
                                 </ExpansionPanelDetails>
                             </CAccordion>
@@ -112,27 +112,16 @@ export const QtAppBlock = (props) => {
                                     aria-controls="panel2bh-content"
                                     id="panel2bh-header"
                                 >
-                                    <Typography className={classes.heading}>Тестирование вставки в хеш-таблицу</Typography>
+                                    <Typography className={classes.heading}>Дизайн</Typography>
+                                    <Typography className={classes.secondaryHeading}>
+                                        Material UI и анимации
+                                    </Typography>
                                 </ExpansionPanelSummary>
                                 <ExpansionPanelDetails>
                                     <SubTypo>
-                                        <li>Настраиваемся генерация файлов для проведения тестирования</li>
-                                        <li>Графики, обновляющиеся в режиме реального времени</li>
-                                        <li>Возможность сохранить результаты тестирования в файл</li>
-                                    </SubTypo>
-                                </ExpansionPanelDetails>
-                            </CAccordion>
-                            <CAccordion expanded={expanded === 'panel3'} onChange={handleChange('panel3')}>
-                                <ExpansionPanelSummary
-                                    expandIcon={<ExpandMoreIcon/>}
-                                    aria-controls="panel3bh-content"
-                                    id="panel3bh-header"
-                                >
-                                    <Typography className={classes.heading}>Общее</Typography>
-                                </ExpansionPanelSummary>
-                                <ExpansionPanelDetails>
-                                    <SubTypo>
-                                        Проекты были созданы в рамках лабораторных или курсовых работ по дисциплинам "Построение и анализ алгоритмов" и "Алгоритмы и структуры данных"
+                                        <li>Доработанные анимации появления объектов с помощью CSS</li>
+                                        <li>Стиль строго соответствует Material дизайну</li>
+                                        <li>Раскрывающиеся и всплывающие панели с проработанной логикой поведения при нажатиях</li>
                                     </SubTypo>
                                 </ExpansionPanelDetails>
                             </CAccordion>
@@ -140,7 +129,7 @@ export const QtAppBlock = (props) => {
                     </Grid>
                     <Grid item xs={12} lg={5} className="gallery">
                         <Grid xs={12}>
-                            <ImageGallery items={qtAppData.images} showPlayButton={false} showNav={false}/>
+                            <ImageGallery items={angularData.images} showPlayButton={false} showNav={false}/>
                         </Grid>
                     </Grid>
                 </Grid>

@@ -25,7 +25,9 @@ export function MainCard() {
                               smooth={true}
                               duration={500}>
                             <Card className='tech-elem'>
-                                {tech}
+                                <InfoTypo>
+                                    {tech}
+                                </InfoTypo>
                             </Card>
                         </Link>
                     </Grid>

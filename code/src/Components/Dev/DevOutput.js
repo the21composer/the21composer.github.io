@@ -5,6 +5,7 @@ import {MainCard} from "./MainCard"
 import {ReactBlock} from "./ReactBlock"
 import {RepairAppBlock} from "./RepairAppBlock"
 import {QtAppBlock} from "./QtAppBlock"
+import {AngularAppBlock} from "./AngularAppBlock";
 
 export const DevOutput = () => {
     return (
@@ -15,6 +16,9 @@ export const DevOutput = () => {
             </Grid>
             <Grid item xs={12} lg={6}>
                 <ReactBlock/>
+            </Grid>
+            <Grid item xs={12} lg={6}>
+                <AngularAppBlock/>
             </Grid>
             <Grid item xs={12} lg={6}>
                 <RepairAppBlock/>

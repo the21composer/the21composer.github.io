@@ -16,6 +16,28 @@ export const reactData = {
     ]
 };
 
+export const angularData = {
+    tech: ["Angular", "Express", "NodeJS", "HTML/CSS/JQuery"],
+    images: [
+        {
+            original: 'static/angularProj/brokers.jpg',
+            thumbnail: 'static/angularProj/brokers.jpg',
+        },
+        {
+            original: 'static/angularProj/stocks.jpg',
+            thumbnail: 'static/angularProj/stocks.jpg',
+        },
+        {
+            original: 'static/angularProj/stocks2.jpg',
+            thumbnail: 'static/angularProj/stocks2.jpg',
+        },
+        {
+            original: 'static/angularProj/settings.jpg',
+            thumbnail: 'static/angularProj/settings.jpg',
+        },
+    ]
+}
+
 export const repairAppData = {
     tech: ["Python", "Flask", "MongoDB", "HTML/CSS/JQuery"],
     images: [
@@ -66,7 +88,7 @@ export const qtAppData = {
 
 
 export const techData = [
-    "React", "Python", "Flask", "MongoDB", "Docker", "HTML/CSS/JQuery", "C++/Qt", "Markdown", "LaTeX"
+    "React", "Angular", "Express", "Python", "Flask", "MongoDB", "Docker", "HTML/CSS/JQuery", "C++/Qt", "LaTeX"
 ];
 
 export const videoData = [
